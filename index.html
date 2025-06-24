@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="LiHRA: A LiDAR-Based HRI Dataset for Automated Risk Monitoring Methods">
+  <meta name="keywords" content="LiHRA, Risk Assessment, HRI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LiHRA: A LiDAR-Based HRI Dataset for Automated Risk Monitoring Methods</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">LiHRA: A LiDAR-Based HRI Dataset for Automated Risk Monitoring Methods</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Frederik Plahl<sup>1,2</sup>,</span>
+            <span class="author-block">
+              Georgios Katranis<sup>2</sup>,</span>
+            <span class="author-block">
+              Ilshat Mamaev<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Andrey Morozov<sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Proximity Robotics & Automation GmbH,</span>
+            <span class="author-block"><sup>2</sup>University of Stuttgart - Institute of Industrial Automation and Software Engineering</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://0.0.0.0"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="https://0.0.0.0"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://cloud.proximityrobotics.com/s/JfbJ44AdKocPGZP"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present LiHRA, a novel dataset designed to facilitate the development of automated, learning based or classical Risk Monitoring (RM) methods for Human-Robot Interaction (HRI) scenarios. The growing prevalence of collaborative robots in industrial environments has heightened the need for reliable safety systems. However, the lack of high-quality datasets capturing realistic human-robot interactions, including potentially hazardous events, slows the development. LiHRA addresses this challenge by providing a comprehensive, multi-modal dataset combining 3D LiDAR point clouds, human body keypoints, and robot joint states, capturing the complete spatial and dynamic context of human-robot collaboration.
+            The dataset is collected using a Seyond Falcon Kinetic image-grade 3D LiDAR, a Franka Emika Robot (FER), and a Motion Capture (MoCap) system built with HTC VIVE Tracker 3.0 sensors, ensuring sub-centimeter accuracy of human limb positions. This combination of modalities allows precise tracking of human movement, robot actions, and environmental conditions, enabling accurate risk monitoring during collaborative tasks.
+            The LiHRA dataset covers six representative HRI scenarios involving collaborative and coexistent tasks, object handovers, and surface polishing, with both safe and hazardous versions of each scenario. In total, the dataset includes 3754 labeled point clouds recorded at approximately 10 Hz, providing a rich resource for training and benchmarking both classical and AI-driven RM algorithms.
+            To demonstrate LiHRA's utility, we introduce an RM method that quantifies the risk level in each scenario over time. This method leverages contextual information, including robot states, and robot dynamic model.
+            With its combination of high-resolution LiDAR data, precise human tracking, robot state data, and realistic collision events, LiHRA offers an essential foundation for future research into real-time risk monitoring and adaptive safety strategies in human-robot workspaces.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/video"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+              <h2 class="title is-3">The LiHRA Dataset</h2>
+              <div class="content has-text-justified">
+                  <p>
+                    LiHRA is a novel LiDAR-based dataset designed for automated Risk Monitoring (RM) in Human-Robot Interaction (HRI). It provides 3D LiDAR point clouds, human keypoints, and robot joint states, capturing real-world HRI dynamics. The dataset includes safety-critical scenarios, such as object handovers and shared workspace interactions, featuring both intentional contacts and unintentional collisions to support risk monitoring and mitigation research.
+                  </p>
+                  <p>
+                    For downloading the dataset, you need to use the password <code>LiHRA-2025</code>. Please note that the dataset is provided for research purposes only and should not be used for commercial purposes.
+                  </p>
+              </div>
+              <div class="publication-links">
+                  <span class="link-block">
+                      <a href="https://cloud.proximityrobotics.com/s/JfbJ44AdKocPGZP"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                              <svg class="svg-inline--fa fa-images fa-w-18" aria-hidden="true" focusable="false"
+                                  data-prefix="far" data-icon="images" role="img"
+                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                      d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z">
+                                  </path>
+                              </svg>
+                          </span>
+                          <span>Dataset</span>
+                      </a>
+                  </span>
+              </div>
+          </div>
+      </div>
+      <div class="columns is-centered">
+          <div class="column">
+              <div class="content feature-list">
+                  <h4>Dataset</h4>
+                  <ul>
+                    <li>6 Scenarios</li>
+                    <ul>
+                      <li>Collaboration (Dangerous, Non-Dangerous)</li>
+                      <li>Object Handover (Dangerous, Non-Dangerous)</li>
+                      <li>Coexistence (Dangerous, Non-Dangerous)</li>
+                    </ul>
+                    <li>3754 Point Clouds</li>
+                    <li>Robot Joint States</li>
+                    <li>Robot ROS 2 tf-Frames</li>
+                    <li>Human Keypoints as ROS 2 tf-Frames</li>
+                </ul>
+              </div>
+              <div class="content feature-list">
+                  <h4>Hardware</h4>
+                  <ul>
+                      <li>Seyond Falcon Kinetic LiDAR</li>
+                      <li>Franka Emika Robot (FER)</li>
+                      <li>HTC VIVE Tracker 3.0</li>
+                  </ul>
+              </div>
+              <div class="content feature-list">
+                  <h4>Annotations</h4>
+                  <ul>
+                      <li>15 Human Keypoints</li>
+                      <li>Robot Joint States</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="column">
+              <img src="static/images/teaser.png">
+          </div>
+      </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>To be updated soon...</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered has-text-centered">
+      <a class="icon-link" href="https://github.com/ProximityRobotics" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <div class="content is-size-7">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website code based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
