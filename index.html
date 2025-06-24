@@ -144,13 +144,13 @@
         <h2 class="title is-3">Simulation-Based MPPI Optimization</h2>
         <div class="content has-text-justified">
           <p>
-            We present a novel approach for automated tuning of Model Predictive Path Integral (MPPI) controller parameters using Bayesian Optimization (BO) within a high-fidelity simulation environment. Our method leverages a digital twin of a differential-drive mobile robot modeled in NVIDIA Omniverse Isaac Sim and integrates seamlessly with the ROS2 Navigation2 (Nav2) stack.
+            We present a robust and reproducible framework for tuning Model Predictive Path Integral (MPPI) controllers using Bayesian Optimization (BO) in the ROS2 Navigation2 (Nav2) stack. The approach is based on a high-fidelity digital twin of a differential-drive mobile robot modeled in NVIDIA Omniverse Isaac Sim, enabling realistic and risk-free parameter optimization.
           </p>
           <p>
-            By optimizing key MPPI parameters—including batch size, temperature, and control noise covariance—we achieve smooth and efficient navigation in dynamic environments. The optimized parameters, identified in simulation, are successfully transferred to a physical robot, demonstrating strong sim-to-real consistency. This approach significantly reduces manual tuning effort and improves controller robustness.
+            The framework allows automated tuning of core MPPI parameters—including batch size, control noise, and temperature—by minimizing a multi-objective cost function based on trajectory smoothness and goal-reaching efficiency. All experiments are conducted in simulation and directly transferred to the real robot with minimal effort, demonstrating strong sim-to-real consistency.
           </p>
           <p>
-            The system enables researchers and developers to integrate BO-based tuning directly into their Nav2-based robotic applications.
+            The simulation-driven BO loop minimizes manual tuning effort and accelerates deployment of MPPI controllers in real-world robotics applications.
           </p>
         </div>
 
@@ -175,7 +175,8 @@
       </div>
     </div>
 
-    <!-- Image Row -->
+
+
     <div class="columns is-centered">
       <div class="column is-one-third has-text-centered">
         <figure class="image is-4by3">
